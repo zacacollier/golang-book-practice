@@ -13,7 +13,7 @@ func makeGenerator() func() int {
 func main() {
   var list [10]int
   newEven := makeGenerator()
-  for value := range list[:] {
-    fmt.Println(value, newEven())
+  for range list[:] {
+    fmt.Println(newEven())
   }
 }
