@@ -10,5 +10,10 @@ func fibRecursive(n int) int {
 }
 
 func main() {
-  fmt.Println(fibRecursive(8))
+  fmt.Println(fibRecursive(5))
+  fmt.Println(fibRecursive(15))
+  fmt.Println(fibRecursive(25))
+  fmt.Println(fibRecursive(35))
+  // starts bottlenecking right about here
+  fmt.Println(fibRecursive(40))
 }
