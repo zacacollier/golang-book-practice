@@ -17,5 +17,6 @@ func fib(n int) int {
 }
 
 func main() {
-  fmt.Println(fib(10))
+  // JavaScript tops out at 9007199254740991 (just returns "Infinity")
+  fmt.Println(fib(10000))
 }
