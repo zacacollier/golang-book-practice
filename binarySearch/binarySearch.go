@@ -7,12 +7,10 @@ func Round(val float64) int {
 }
 
 func binarySearch(seq []int, i int) int {
-  seq = seq[:]
   low := 0
   high := len(seq) - 1
-  var mid int
   for low <= high {
-    mid = low + Round(float64(high - low)) / 2
+    mid := low + Round(float64(high - low)) / 2
     // If `i` is above the current midpoint,
     // shift the starting point `low` forward by 1.
     if (seq[mid] < i) {
